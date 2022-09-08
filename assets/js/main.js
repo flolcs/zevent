@@ -18,6 +18,7 @@ sr.reveal(".h2020", { origin: "left" });
 sr.reveal(".h2021", { origin: "top" });
 sr.reveal(".h2022", { origin: "bottom" });
 
+// VANTA
 VANTA.TOPOLOGY({
   el: ".top-header",
   mouseControls: true,
@@ -34,3 +35,5 @@ VANTA.TOPOLOGY({
   waveSpeed: 5,
   zoom: 1,
 });
+
+// Locomotive
