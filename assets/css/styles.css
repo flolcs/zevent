@@ -36,6 +36,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *::selection {
@@ -94,6 +95,11 @@ a:visited {
 .icon {
   color: var(--color2);
   font-size: 1.7rem;
+}
+
+.icon:hover {
+  font-size: 2rem;
+  transition: .5s;
 }
 
 .link a:nth-child(2n+1) {
