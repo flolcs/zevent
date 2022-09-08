@@ -213,39 +213,6 @@ b {
   font-size: 0.8rem;
 }
 
-.h2016:hover {
-  background: url(../img/savethechildren.png) top/cover;
-}
-.h2017:hover {
-  background: url(../img/croixrouge.jpg) top/cover;
-  justify-self: center;
-}
-.h2018:hover {
-  background: url(../img/msf.png) top/cover;
-}
-.h2019:hover {
-  background: url(../img/institutpasteur.png) top/cover;
-}
-.h2020:hover {
-  background: url(../img/amnesty.png) top/cover;
-}
-.h2021:hover {
-  background: url(../img/acf.png) top/cover;
-}
-.h2022:hover {
-  background: url(../img/logo.png) top/cover;
-}
-
-.historique-container:hover .date {
-  visibility: hidden;
-}
-.historique-container:hover .montant {
-  visibility: hidden;
-}
-.historique-container:hover .asso {
-  visibility: hidden;
-}
-
 .h2022 {
   grid-column: 1/3;
   align-items: center;
@@ -293,10 +260,42 @@ b {
     padding-right: 60px;
   }
 }
+
+@media (min-width: 445px) and (max-width: 768px) {
+  .streamers {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media (min-width: 769px) {
   main {
     padding-left: 20%;
     padding-right: 20%;
   }
+  .streamers {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .link a:nth-child(2n+1) {
+    display: block;
+  }
+  .link a:nth-child(2n+2) {
+    display: none;
+  }
+  ul {
+    width: 35%;
+    height: 100%;
+    max-width: 330px;
+  }
+  #logo {
+    height: 100px;
+    width: auto;
+  }
 }
+
+@media (min-width: 1025px) {
+  .streamers {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 
