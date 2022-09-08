@@ -1,0 +1,188 @@
+/*=============== FONTS ===============*/
+@font-face {
+  font-family: "font-1";
+  src: url(../fonts/Switzer-Extralight.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(../fonts/Switzer-Light.ttf);
+}
+
+@font-face {
+  font-family: "font-3";
+  src: url(../fonts/Switzer-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-4";
+  src: url(../fonts/Switzer-Bold.ttf);
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --color1: #000000;
+  --color2: #ffffff;
+  --color3: #202020;
+  --color4: #57af37;
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: var(--color5);
+}
+
+body {
+  font-family: "font-3";
+  font-size: 1rem;
+  color: var(--color2);
+  background-color: var(--color3);
+}
+
+/*=============== HEADER ===============*/
+header {
+  height: 115px;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--color3);
+}
+
+.top-header {
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  color: var(--color2);
+  font-size: 1.7rem;
+}
+
+.link a:nth-child(2n+1) {
+  display: none;
+}
+
+.billeterie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bot-header {
+  width: 100%;
+  height: 45px;
+  background-color: var(--color1);
+  padding-right: 20px;
+}
+
+.reseaux {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.reseaux a:nth-child(0n+2) {
+  margin: 10px;
+}
+
+#logo {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80px;
+  width: auto;
+}
+
+
+
+/*=============== MAIN ===============*/
+main {
+  z-index: 10;
+  position: absolute;
+  width: 100vw;
+  top: 115px;
+  padding: 20px;
+}
+
+#banniereZEvent {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.presentation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+p {
+  font-family: "font-2";
+  line-height: 25px;
+}
+
+.presentation p:nth-child(0n+2) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+b {
+  font-family: "font-4";
+  color: var(--color4);
+}
+
+/*=============== FOOTER ===============*/
+
+/*=============== RESPONSIVE ===============*/
+@media (min-width: 1441px) {
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+@media (min-width: 425px) and (max-width: 767px) {
+}
+@media (min-width: 375px) and (max-width: 424px) {
+}
+@media (max-width: 374px) {
+}
