@@ -35,5 +35,3 @@ VANTA.TOPOLOGY({
   waveSpeed: 5,
   zoom: 1,
 });
-
-// Locomotive
