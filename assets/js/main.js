@@ -17,6 +17,12 @@ sr.reveal(".h2019", { origin: "top" });
 sr.reveal(".h2020", { origin: "left" });
 sr.reveal(".h2021", { origin: "top" });
 sr.reveal(".h2022", { origin: "bottom" });
+sr.reveal(".filtre-fdf", { origin: "top" });
+sr.reveal(".filtre-seasheperd", { origin: "top" });
+sr.reveal(".filtre-lpo", { origin: "top" });
+sr.reveal(".filtre-wwf", { origin: "bottom" });
+sr.reveal(".filtre-tftp", { origin: "bottom" });
+sr.reveal(".filtre-theseacleaners", { origin: "bottom" });
 
 // VANTA
 VANTA.TOPOLOGY({
@@ -42,6 +48,7 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 20,
   loop: true,
   loopFillGroupWithBlank: true,
+  grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -82,7 +89,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// JS
+// JS Streamers
 const swiperOpen = document.getElementById("swiperOpen");
 const swiperClose = document.getElementById("swiperClose");
 const swiperJs = document.querySelector(".swiperjs");
@@ -97,4 +104,108 @@ swiperClose.addEventListener("click", () => {
   swiperJs.style.display = "none";
   swiperOpen.style.display = "flex";
   swiperClose.style.display = "none";
+});
+
+// JS Associations
+const filtreFdf = document.querySelector(".filtre-fdf");
+const filtreSeasheperd = document.querySelector(".filtre-seasheperd");
+const filtreLpo = document.querySelector(".filtre-lpo");
+const filtreWwf = document.querySelector(".filtre-wwf");
+const filtreTftp = document.querySelector(".filtre-tftp");
+const filtreTheseacleaners = document.querySelector(".filtre-theseacleaners");
+const fdf = document.querySelector(".fdf");
+const seasheperd = document.querySelector(".seasheperd");
+const lpo = document.querySelector(".lpo");
+const wwf = document.querySelector(".wwf");
+const tftp = document.querySelector(".tftp");
+const theseacleaners = document.querySelector(".theseacleaners");
+
+filtreFdf.addEventListener("click", () => {
+  filtreFdf.classList.add("active-filtre");
+  fdf.classList.add("active-asso");
+  filtreSeasheperd.classList.remove("active-filtre");
+  filtreLpo.classList.remove("active-filtre");
+  filtreWwf.classList.remove("active-filtre");
+  filtreTftp.classList.remove("active-filtre");
+  filtreTheseacleaners.classList.remove("active-filtre");
+  seasheperd.classList.remove("active-asso");
+  lpo.classList.remove("active-asso");
+  wwf.classList.remove("active-asso");
+  tftp.classList.remove("active-asso");
+  theseacleaners.classList.remove("active-asso");
+});
+
+filtreSeasheperd.addEventListener("click", () => {
+  filtreSeasheperd.classList.add("active-filtre");
+  seasheperd.classList.add("active-asso");
+  filtreFdf.classList.remove("active-filtre");
+  filtreLpo.classList.remove("active-filtre");
+  filtreWwf.classList.remove("active-filtre");
+  filtreTftp.classList.remove("active-filtre");
+  filtreTheseacleaners.classList.remove("active-filtre");
+  fdf.classList.remove("active-asso");
+  lpo.classList.remove("active-asso");
+  wwf.classList.remove("active-asso");
+  tftp.classList.remove("active-asso");
+  theseacleaners.classList.remove("active-asso");
+});
+
+filtreLpo.addEventListener("click", () => {
+  filtreLpo.classList.add("active-filtre");
+  lpo.classList.add("active-asso");
+  filtreFdf.classList.remove("active-filtre");
+  filtreSeasheperd.classList.remove("active-filtre");
+  filtreWwf.classList.remove("active-filtre");
+  filtreTftp.classList.remove("active-filtre");
+  filtreTheseacleaners.classList.remove("active-filtre");
+  fdf.classList.remove("active-asso");
+  seasheperd.classList.remove("active-asso");
+  wwf.classList.remove("active-asso");
+  tftp.classList.remove("active-asso");
+  theseacleaners.classList.remove("active-asso");
+});
+
+filtreWwf.addEventListener("click", () => {
+  filtreWwf.classList.add("active-filtre");
+  wwf.classList.add("active-asso");
+  filtreFdf.classList.remove("active-filtre");
+  filtreSeasheperd.classList.remove("active-filtre");
+  filtreLpo.classList.remove("active-filtre");
+  filtreTftp.classList.remove("active-filtre");
+  filtreTheseacleaners.classList.remove("active-filtre");
+  fdf.classList.remove("active-asso");
+  seasheperd.classList.remove("active-asso");
+  lpo.classList.remove("active-asso");
+  tftp.classList.remove("active-asso");
+  theseacleaners.classList.remove("active-asso");
+});
+
+filtreTftp.addEventListener("click", () => {
+  filtreTftp.classList.add("active-filtre");
+  tftp.classList.add("active-asso");
+  filtreFdf.classList.remove("active-filtre");
+  filtreSeasheperd.classList.remove("active-filtre");
+  filtreLpo.classList.remove("active-filtre");
+  filtreWwf.classList.remove("active-filtre");
+  filtreTheseacleaners.classList.remove("active-filtre");
+  fdf.classList.remove("active-asso");
+  seasheperd.classList.remove("active-asso");
+  lpo.classList.remove("active-asso");
+  wwf.classList.remove("active-asso");
+  theseacleaners.classList.remove("active-asso");
+});
+
+filtreTheseacleaners.addEventListener("click", () => {
+  filtreTheseacleaners.classList.add("active-filtre");
+  theseacleaners.classList.add("active-asso");
+  filtreFdf.classList.remove("active-filtre");
+  filtreSeasheperd.classList.remove("active-filtre");
+  filtreLpo.classList.remove("active-filtre");
+  filtreWwf.classList.remove("active-filtre");
+  filtreTftp.classList.remove("active-filtre");
+  fdf.classList.remove("active-asso");
+  seasheperd.classList.remove("active-asso");
+  lpo.classList.remove("active-asso");
+  wwf.classList.remove("active-asso");
+  tftp.classList.remove("active-asso");
 });
