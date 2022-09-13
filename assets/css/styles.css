@@ -378,7 +378,7 @@ h2 {
 
 footer {
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   width: 100%;
   z-index: 1001;
   display: flex;
